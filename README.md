@@ -104,5 +104,4 @@ Circuito de mando directo con auto-mantenimiento opcional (no implementado en es
 ## Video de demostración PLCSIM
 [PLCSIM_Demo_2025-11-21.mp4 (1 min 15 s)](videos/PLCSIM_Demo_2025-11-21.mp4) – Inicio del emulador, descarga del programa, forzado de entrada y activación de salida.
 
-## Licencia
-CC BY-NC-SA 4.0
+
