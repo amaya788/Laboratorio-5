@@ -102,7 +102,6 @@ Circuito de mando directo con auto-mantenimiento opcional (no implementado en es
 ![Ladder OB1](imagenes/Fig6_ladder_ob1.png)  
 
 ## Video de demostración PLCSIM
-<video width="100%" autoplay muted loop playsinline controls>
-  <source src="https://raw.githubusercontent.com/amaya788/Laboratorio-5/a3f871e9f333317b874f9651eaa9f229ab743f4d/videos/demo_plc_7s.mp4" type="video/mp4">
+[![Demo PLC](videos/demo_plc_7s.gif)](https://github.com/amaya788/Laboratorio-5/blob/a3f871e9f333317b874f9651eaa9f229ab743f4d/videos/demo_plc_7s.mp4)
 
 
