@@ -102,6 +102,6 @@ Circuito de mando directo con auto-mantenimiento opcional (no implementado en es
 ![Ladder OB1](imagenes/Fig6_ladder_ob1.png)  
 
 ## Video de demostración PLCSIM
-[PLCSIM_Demo_2025-11-21.mp4 (1 min 15 s)](videos/PLCSIM_Demo_2025-11-21.mp4) – Inicio del emulador, descarga del programa, forzado de entrada y activación de salida.
+<video src="videos/demo_plc_7s.mp4" width="600" controls></video>
 
 
