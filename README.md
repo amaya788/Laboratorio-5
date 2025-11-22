@@ -10,7 +10,7 @@
 **Docente:**  
 ING. Diego Alejandro Barragán Vargas  
 
----
+
 
 # 1. Resumen
 
@@ -22,14 +22,14 @@ Este informe presenta el desarrollo experimental de tres módulos clave en la au
 
 Los resultados demuestran comunicación estable, enrutamiento correcto y validación funcional completa en simulación.
 
----
+
 
 # 2. Introducción
 
 El laboratorio integra tecnologías **IT** (switching, routing, ARP) con **OT** (buses industriales, PLC, sensores).  
 Los procedimientos abarcan desde capas físicas como **RS-485**, pasando por protocolos de enlace y red, hasta la capa de aplicación mediante **Modbus RTU** y lógica Ladder en PLC.
 
----
+
 
 # 3. Marco Teórico
 
@@ -52,11 +52,11 @@ Funciona bajo un esquema **Maestro–Esclavo**, con consultas cíclicas del maes
 El PLC ejecuta cíclicamente OB1: lee entradas → ejecuta lógica → actualiza salidas.  
 Ladder es parte del estándar IEC 61131-3.
 
----
+
 
 # 4. Desarrollo Experimental
 
----
+
 
 # 4.1 Punto 1 — Red IP segmentada
 
@@ -70,7 +70,7 @@ Se utilizó:
 
 <img width="914" height="521" alt="image" src="https://github.com/user-attachments/assets/71d1bedd-ebb1-453a-bc47-a76e681e65bc" />
 
----
+
 
 ## 4.1.2 Plan de direccionamiento
 
@@ -79,16 +79,16 @@ Se utilizó:
 | Red A | VLAN 10 | 192.168.10.0/24 | 192.168.10.1 |
 | Red B | VLAN 20 | 192.168.20.0/24 | 192.168.20.1 |
 
----
+
 
 ## 4.1.3 Análisis ARP
 
 - El *ping* entre redes funciona correctamente.  
 - La tabla ARP muestra la **MAC del gateway**, no la del host final.  
 
-✔ Esto confirma que **ARP no atraviesa routers**, lo cual valida la segmentación.
+- Esto confirma que **ARP no atraviesa routers**, lo cual valida la segmentación.
 
----
+
 
 # 4.2 Punto 2 — Bus RS-485 y Modbus RTU
 
@@ -102,7 +102,7 @@ Configuración:
 <img width="866" height="529" alt="image" src="https://github.com/user-attachments/assets/17672ed6-1e7a-455e-b954-51f53df9e829" />
 
 
----
+
 
 ## 4.2.2 Implementación física
 
@@ -114,7 +114,7 @@ Configuración:
 <img width="978" height="340" alt="image" src="https://github.com/user-attachments/assets/e790a25c-64d6-4779-b8ee-646a758cfd92" />
 
 
----
+
 
 ## 4.2.3 Pruebas y resultados
 
@@ -125,7 +125,7 @@ Configuración:
 
 ✔ Comunicación estable incluso en presencia de ruido eléctrico.
 
----
+
 
 # 4.3 Punto 3 — Automatización con TIA Portal
 
@@ -151,7 +151,7 @@ Dependiendo del equipo, esta fase puede tardar entre 30–60 minutos.
 
 <img width="921" height="472" alt="image" src="https://github.com/user-attachments/assets/7521bf26-c26d-4071-bc00-8383fc54ec7e" />
 
----
+
 
 ## 4.3.2 Configuración de hardware (S7-1200)
 
@@ -167,7 +167,6 @@ Esta selección determina la estructura del proyecto y los bloques disponibles.
 
 <img width="975" height="526" alt="image" src="https://github.com/user-attachments/assets/cffa270b-5c90-4f8a-9dc9-c6f713a34858" />
 
----
 
 ## 4.3.3 Variables y direccionamiento simbólico
 
@@ -183,7 +182,7 @@ La tabla de variables permite organizar, clasificar y documentar todas las seña
 
 <img width="975" height="528" alt="image" src="https://github.com/user-attachments/assets/66fe90b1-b343-45f8-95f9-f5617119ad25" />
 
----
+
 
 ## 4.3.4 Lógica Ladder en OB1
 
@@ -197,7 +196,7 @@ Cuando la entrada es activada (ya sea de forma real o forzada en PLCSIM), la sal
 
 <img width="975" height="526" alt="image" src="https://github.com/user-attachments/assets/b543e8c6-598a-45f1-aca4-0a7ea7665dc0" />
 
----
+
 
 ## 4.3.5 Validación en PLCSIM
 
@@ -220,7 +219,7 @@ Video de validación:
 - **Modbus RTU** funcionó sin errores (0 CRC).  
 - **PLC + PLCSIM** validó el ciclo completo de control sin hardware físico.  
 
----
+
 
 # 6. Conclusiones
 
@@ -228,7 +227,7 @@ Video de validación:
 2. RS-485 demuestra su robustez y vigencia industrial.  
 3. Virtual commissioning reduce costos y permite depurar lógicas antes de energizar equipos reales.  
 
----
+
 
 # 7. Referencias
 
