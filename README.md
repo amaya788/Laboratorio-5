@@ -1,4 +1,4 @@
-# 📘 Laboratorio 5 – Comunicaciones Industriales  
+# Laboratorio 5 – Comunicaciones Industriales  
 **Universidad Santo Tomás – Ingeniería Electrónica**  
 **Noviembre 2025**
 
