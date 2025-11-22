@@ -2,7 +2,7 @@
 Universidad Santo Tomás, noviembre 2025  
 
 ## Resumen
-Se implementó una arquitectura de red enrutada validando la segmentación de dominios de difusión mediante ARP; se estableció comunicación Maestro-Esclavo con Modbus RTU sobre RS-485 y se virtualizó un entorno de control con Siemens TIA Portal y S7-PLCSIM. Los ensayos demuestran confinamiento de broadcast, robustez en bus de campo y validación completa de la lógica Ladder antes de invertir en hardware físico.
+Se implementó una arquitectura de red enrutada validando la segmentación de dominios de difusión mediante ARP; se estableció comunicación Maestro-Esclavo con Modbus RTU sobre RS-485 y se virtu[...] 
 
 ## Objetivos
 - Comprobar experimentalmente que ARP no atraviesa routers y que la segmentación reduce la tormenta de broadcast.  
@@ -28,7 +28,7 @@ Se implementó una arquitectura de red enrutada validando la segmentación de do
 - Red B (VLAN 20): 192.168.20.0/24 – Gateway 192.168.20.1
 
 **Prueba y análisis**  
-Ping inter-red exitoso; captura con `arp -a` muestra que la IP remota se resuelve a la MAC del gateway local. Se confirma que ARP es un protocolo de enlace local y que la segmentación contiene los broadcasts.
+Ping inter-red exitoso; captura con `arp -a` muestra que la IP remota se resuelve a la MAC del gateway local. Se confirma que ARP es un protocolo de enlace local y que la segmentación contiene lo[...] 
 
 ### 2. Bus RS-485 con Modbus RTU
 **Hardware**  
@@ -42,7 +42,7 @@ Ping inter-red exitoso; captura con `arp -a` muestra que la IP remota se resuelv
 - Esquema: polling cíclico (1 s) al registro 0 del esclavo (dirección 1, función 0x03).
 
 **Resultados**  
-1000 tramas transmitidas; 0 errores CRC. Voltaje diferencial A-B = 2,1 V, CMRR &gt; 40 dB. La librería calcula y verifica CRC automáticamente, descartando tramas con ruido eléctrico.
+1000 tramas transmitidas; 0 errores CRC. Voltaje diferencial A-B = 2,1 V, CMRR > 40 dB. La librería calcula y verifica CRC automáticamente, descartando tramas con ruido eléctrico.
 
 ### 3. Automatización y virtualización con TIA Portal
 **Instalación del entorno**  
@@ -87,7 +87,7 @@ Circuito de mando directo con auto-mantenimiento opcional (no implementado en es
 ## Conclusiones
 1. La segmentación a nivel capa 3 contiene las tormentas de broadcast y mejora la seguridad OT.  
 2. RS-485 con Modbus-RTU mantiene integridad de datos en entornos ruidosos; su simplicidad y robustez lo mantienen vigente.  
-3. El uso de TIA Portal + S7-PLCSIM permite “virtual commissioning” completo: configuración de hardware, mapeo simbólico, programación Ladder y validación en tiempo real, reduciendo tiempos y costos de puesta en marcha.
+3. El uso de TIA Portal + S7-PLCSIM permite “virtual commissioning” completo: configuración de hardware, mapeo simbólico, programación Ladder y validación en tiempo real, reduciendo tiempo[...] 
 
 ## Referencias
 - Tanenbaum, A. S. *Redes de Computadoras*, 5.ª ed., Pearson, 2012.  
@@ -102,6 +102,8 @@ Circuito de mando directo con auto-mantenimiento opcional (no implementado en es
 ![Ladder OB1](imagenes/Fig6_ladder_ob1.png)  
 
 ## Video de demostración PLCSIM
-[![Demo PLC](videos/demo_plc_7s.gif)](https://github.com/amaya788/Laboratorio-5/blob/a3f871e9f333317b874f9651eaa9f229ab743f4d/videos/demo_plc_7s.mp4)
 
-
+<video controls width="720">
+  <source src="https://raw.githubusercontent.com/amaya788/Laboratorio-5/a0a81dac771ba6de37aa6c285aa1a412139d06c8/videos/demo_plc_7s.mp4" type="video/mp4">
+  Tu navegador no soporta el elemento de video. Puedes descargar el video aquí: https://github.com/amaya788/Laboratorio-5/blob/a0a81dac771ba6de37aa6c285aa1a412139d06c8/videos/demo_plc_7s.mp4
+</video>
