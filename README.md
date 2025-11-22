@@ -131,7 +131,6 @@ Configuración:
 
 ## 4.3.1 Instalación
 
-Imágenes originales que enviaste:
 
 <img width="921" height="858" alt="image" src="https://github.com/user-attachments/assets/4045ff24-713a-4494-bc2c-6b970c033014" />
 
@@ -161,7 +160,6 @@ Imágenes originales que enviaste:
 
 ## 4.3.5 Validación en PLCSIM
 
-```html
 <video src="https://github.com/user-attachments/assets/2410d8ee-6f49-4f12-929e-1a1806e414b3" loop autoplay muted playsinline>
     Tu navegador no soporta la etiqueta de video HTML5.
 </video>
