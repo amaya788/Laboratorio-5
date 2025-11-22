@@ -100,7 +100,6 @@ Configuración:
 - Parámetros: **9600 bps, 8N1, timeout 200 ms**
 
 
-<img width="921" height="858" alt="image" src="https://github.com/user-attachments/assets/4045ff24-713a-4494-bc2c-6b970c033014" />
 
 ---
 
