@@ -111,8 +111,7 @@ Configuración:
 - Bias resistors: 680 Ω  
 - Topología bus lineal  
 
-<img width="978" height="340" alt="image" src="https://github.com/user-attachments/assets/5c047c4b-e7ed-4b78-8cc0-a6e1328df8fc" />
-
+<img width="866" height="529" alt="image" src="https://github.com/user-attachments/assets/17b363b8-8b57-447c-b1ce-ead445109a2e" />
 
 ---
 
