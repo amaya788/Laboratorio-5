@@ -231,9 +231,35 @@ Video de validación:
 
 # 7. Referencias
 
-- Tanenbaum, A. S. *Redes de Computadoras*, Pearson, 2012.  
-- Siemens AG. *SIMATIC S7-1200 System Manual*, 2023.  
-- Modbus Organization. *Modbus over Serial Line V1.02*, 2020.  
+- **Tanenbaum, A. S. – Redes de Computadoras (5ta Ed.)**  
+  Información del libro en el editor Pearson:  
+  https://www.pearson.com/en-us/subject-catalog/p/computer-networks/P200000003610/9780132126953
+
+- **Siemens AG – SIMATIC S7-1200 System Manual**  
+  Manual oficial descargable desde Siemens Industry Online Support (SIOS):  
+  https://support.industry.siemens.com/cs/document/109744163/simatic-s7-1200-system-manual
+
+- **Modbus Organization – Modbus over Serial Line (V1.02)**  
+  Documento oficial del estándar Modbus RTU sobre RS-485:  
+  https://modbus.org/docs/Modbus_over_serial_line_V1_02.pdf
+
+- **Modbus Application Protocol Specification (V1.1b3)**  
+  Especificación completa del protocolo Modbus RTU:  
+  https://modbus.org/docs/Modbus_Application_Protocol_V1_1b3.pdf
+
+- **Siemens – TIA Portal (Totally Integrated Automation Portal)**  
+  Página oficial de descargas de TIA Portal (requiere cuenta Siemens):  
+  https://support.industry.siemens.com/cs/document/109794865/tia-portal-download
+
+- **Python MinimalModbus Library**  
+  Documentación oficial:  
+  https://minimalmodbus.readthedocs.io/en/stable/
+
+- **PySerial Library**  
+  Documentación oficial:  
+ https://pyserial.readthedocs.io/en/latest/
+
+
 
 
 
