@@ -46,33 +46,40 @@ Ping inter-red exitoso; captura con `arp -a` muestra que la IP remota se resuelv
 
 ### 3. Automatización y virtualización con TIA Portal
 **Instalación del entorno**  
-- Descarga oficial desde Siemens Support.  
-- Ejecutar Start.exe con todos los paquetes en la misma carpeta (STEP 7, WinCC, Automation License Manager).  
+- Descarga oficial desde Siemens Support.
+  <img width="921" height="858" alt="image" src="https://github.com/user-attachments/assets/4045ff24-713a-4494-bc2c-6b970c033014" />
+- Ejecutar Start.exe con todos los paquetes en la misma carpeta (STEP 7, WinCC, Automation License Manager).
+  <img width="921" height="519" alt="image" src="https://github.com/user-attachments/assets/70bc265a-16ca-467b-8ba9-103b72bcecdf" />
 - Proceso de instalación 30-60 min; reinicio y activación de licencias con Automation License Manager.
+  <img width="921" height="472" alt="image" src="https://github.com/user-attachments/assets/7521bf26-c26d-4071-bc00-8383fc54ec7e" />
 
 **Configuración de hardware**  
-- CPU virtual: S7-1212C DC/DC/DC, firmware V4.6.  
+- CPU virtual: S7-1212C DC/DC/DC, firmware V4.6.
+  <img width="975" height="526" alt="image" src="https://github.com/user-attachments/assets/cffa270b-5c90-4f8a-9dc9-c6f713a34858" />
 - Alimentación y entradas a 24 V DC; salidas a transistor para conmutación rápida.  
 - Interfaz de simulación: PLCSIM Virtual Ethernet.
 
 **Direccionamiento y variables**  
 Uso de direccionamiento simbólico para mantenibilidad:  
-- Entrada: %I0.0 → etiqueta “Start_Button”.  
-- Salida: %Q0.0 → etiqueta “Motor_Lamp”.  
+- Entrada: %M0.0 → etiqueta “Start_Button”.  
+- Salida: %Q0.0 → etiqueta “Motor_Lamp”.
 Tabla de tags creada dentro del proyecto TIA.
+<img width="975" height="528" alt="image" src="https://github.com/user-attachments/assets/66fe90b1-b343-45f8-95f9-f5617119ad25" />
 
 **Programa Ladder**  
 Bloque OB1, ciclo 10 ms:  
 - Contacto normalmente abierto (NO) con dirección “Start_Button”.  
-- Bobina de salida con dirección “Motor_Lamp”.  
-Circuito de mando directo con auto-mantenimiento opcional (no implementado en esta versión básica).
+- Bobina de salida con dirección “Motor_Lamp”.
+  <img width="975" height="526" alt="image" src="https://github.com/user-attachments/assets/b543e8c6-598a-45f1-aca4-0a7ea7665dc0" />
 
 **Validación en PLCSIM**  
 1. Descarga sin errores.  
 2. Modo “Online”; forzado de %I0.0 = TRUE.  
 3. Visualización del flujo de corriente virtual (línea verde) y cambio inmediato de %Q0.0 a TRUE.  
-4. Tiempo de respuesta medido: 9,8 ms (coincide con ciclo de barrido).  
-5. Grabación de pantalla para evidencia de funcionamiento.
+4. Grabación de pantalla para evidencia de funcionamiento.
+<video src="https://github.com/user-attachments/assets/2410d8ee-6f49-4f12-929e-1a1806e414b3" loop autoplay muted playsinline>
+    Tu navegador no soporta la etiqueta de video HTML5.
+</video>
 
 **Ventajas del virtual commissioning**  
 - Depuración de lógica sin hardware físico.  
@@ -94,16 +101,5 @@ Circuito de mando directo con auto-mantenimiento opcional (no implementado en es
 - Siemens AG, *SIMATIC S7-1200 System Manual*, Edition 09/2023.  
 - Modbus Organization, *Modbus over Serial Line Specification V1.02*, 2020.
 
-## Imágenes representativas
-![Topología red](imagenes/Fig1_topologia_red.png)  
-![Captura ARP](imagenes/Fig2_tabla_arp.png)  
-![Bus RS-485](imagenes/Fig3_bus_rs485.png)  
-![Configuración TIA hardware](imagenes/Fig5_tia_hardware.png)  
-![Ladder OB1](imagenes/Fig6_ladder_ob1.png)  
-
-## Video de demostración PLCSIM
-
-
-https://github.com/user-attachments/assets/2410d8ee-6f49-4f12-929e-1a1806e414b3
 
 
