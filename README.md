@@ -99,6 +99,7 @@ Configuración:
 - Librerías: `pyserial`, `minimalmodbus`  
 - Parámetros: **9600 bps, 8N1, timeout 200 ms**
 
+<img width="866" height="529" alt="image" src="https://github.com/user-attachments/assets/17672ed6-1e7a-455e-b954-51f53df9e829" />
 
 
 ---
@@ -110,6 +111,7 @@ Configuración:
 - Bias resistors: 680 Ω  
 - Topología bus lineal  
 
+<img width="978" height="340" alt="image" src="https://github.com/user-attachments/assets/e790a25c-64d6-4779-b8ee-646a758cfd92" />
 
 
 ---
@@ -125,31 +127,6 @@ Configuración:
 
 ---
 
-# 4.3 Punto 3 — Automatización con TIA Portal
-
-## 4.3.1 Instalación del entorno TIA Portal
-
-A continuación se muestran los pasos principales para realizar la instalación del TIA Portal, acompañados de las imágenes que documentan el proceso:
-
-### 1. Descarga desde Siemens Support
-En esta pantalla se accede al portal oficial donde se descargan los paquetes de instalación de TIA Portal.  
-Se debe descargar la versión completa junto con los módulos asociados (STEP 7, WinCC, etc.).
-
-<img width="921" height="858" alt="image" src="https://github.com/user-attachments/assets/4045ff24-713a-4494-bc2c-6b970c033014" />
-
-### 2. Ejecución del instalador Start.exe
-Una vez descargados los archivos, todos deben estar en la misma carpeta.  
-La ejecución del archivo **Start.exe** permite iniciar la instalación global de TIA Portal.
-
-<img width="921" height="519" alt="image" src="https://github.com/user-attachments/assets/70bc265a-16ca-467b-8ba9-103b72bcecdf" />
-
-### 3. Instalación de componentes
-En este paso el instalador despliega los módulos que serán instalados: STEP 7, WinCC, soporte de librerías, Automation License Manager, entre otros.  
-Dependiendo del equipo, esta fase puede tardar entre 30–60 minutos.
-
-<img width="921" height="472" alt="image" src="https://github.com/user-attachments/assets/7521bf26-c26d-4071-bc00-8383fc54ec7e" />
-
----
 # 4.3 Punto 3 — Automatización con TIA Portal
 
 ## 4.3.1 Instalación del entorno TIA Portal
