@@ -81,7 +81,7 @@ Bloque OB1, ciclo 10 ms:
     Tu navegador no soporta la etiqueta de video HTML5.
 </video>
 
-**Ventajas del virtual commissioning**  
+**Ventajas del virtual PLCSim**  
 - Depuración de lógica sin hardware físico.  
 - Reducción de riesgos y costos durante la puesta en marcha.  
 - Validación completa de mapeo de memoria, tiempos de escaneo y visualización HMI antes de integrar la planta.
