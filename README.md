@@ -103,7 +103,7 @@ Circuito de mando directo con auto-mantenimiento opcional (no implementado en es
 
 ## Video de demostración PLCSIM
 
-<video controls width="720">
-  <source src="https://raw.githubusercontent.com/amaya788/Laboratorio-5/a0a81dac771ba6de37aa6c285aa1a412139d06c8/videos/demo_plc_7s.mp4" type="video/mp4">
-  Tu navegador no soporta el elemento de video. Puedes descargar el video aquí: https://github.com/amaya788/Laboratorio-5/blob/a0a81dac771ba6de37aa6c285aa1a412139d06c8/videos/demo_plc_7s.mp4
-</video>
+
+https://github.com/user-attachments/assets/2410d8ee-6f49-4f12-929e-1a1806e414b3
+
+
